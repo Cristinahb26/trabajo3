@@ -3,7 +3,7 @@ const person = require("./person");
 
 
 
-let persona = new person (165, 65);
+let persona = new person (165, 65, 1988, [` dormir, comer`]);
 
 let Imc = persona.calcularImc()
 

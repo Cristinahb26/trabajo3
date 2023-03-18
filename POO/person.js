@@ -1,12 +1,12 @@
 class person {
-    constructor(altura, peso){
+    constructor(altura, peso, yearOfBirth, hobbies){
 
         this.altura = altura;
         this.peso = peso;
-        this.yearOfBirth = 1988;
-        this.hobbies = ["dormir, leer"];
+        this.yearOfBirth = yearOfBirth;
+        this.hobbies = hobbies;
 
-        // this.datosCompletos = this.altura + " " + this.peso + " " + (2023-this.yearOfBirth) + " " + this.hobbies
+    
     }
     calcularImc (){
         let altura = this.altura / 100;
@@ -30,11 +30,11 @@ class person {
 
 
 
-// let persona = new person (165, 65);
+let persona = new person (165, 65, 1988, [`dormir, comer`]);
 
-// let Imc = persona.calcularImc()
+let Imc = persona.calcularImc()
 
-// let Edad = persona.calcularEdad()
+let Edad = persona.calcularEdad()
 
 //          console.log(Imc);
 
@@ -43,6 +43,9 @@ class person {
 //          persona.printAll();
 
 //          persona.printHobbies();
+
+
+// console.log(persona);
  
 
 module.exports = person;
