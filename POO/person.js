@@ -19,7 +19,7 @@ class person {
 
     }
     printAll (){
-        console.log(this);
+        console.log(`altura:  ${this.altura} - peso: ${this.peso} - año de nacimiento: ${this.yearOfBirth} - hobbies: ${this.hobbies}`);
 
     }
     printHobbies(){
@@ -40,7 +40,7 @@ let Edad = persona.calcularEdad()
 
 //          console.log(Edad);
 
-//          persona.printAll();
+        //  persona.printAll();
 
 //          persona.printHobbies();
 

@@ -15,7 +15,7 @@ class Contacts {
     }
     printPersons(){
 
-        console.log(` la altura es ${person.altura} + el peso ${person.peso} + el año de nacimiento es ${person.yearOfBirth} + hobbies es ${person.hobbies} `);
+        console.log(` la altura es ${person.altura} - el peso ${person.peso} - el año de nacimiento es ${person.yearOfBirth} -  hobbies es ${person.hobbies} `);
     
      }
     }
