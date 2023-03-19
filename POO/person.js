@@ -10,16 +10,15 @@ class person {
     }
     calcularImc (){
         let altura = this.altura / 100;
-     return this.peso / (altura * altura)
+     return this.peso / (altura * altura);
 
     }
-    calcularEdad (){
-        let edad = 2023 - this.yearOfBirth;
-        return edad
+    calcularEdad (currentYear){
+        return currentYear - this.yearOfBirth
 
     }
     printAll (){
-        console.log(`altura:  ${this.altura} - peso: ${this.peso} - año de nacimiento: ${this.yearOfBirth} - hobbies: ${this.hobbies}`);
+        console.log(`altura: ${this.altura} - peso: ${this.peso} - año de nacimiento: ${this.yearOfBirth} - hobbies: ${this.hobbies}`);
 
     }
     printHobbies(){
@@ -30,22 +29,24 @@ class person {
 
 
 
-let persona = new person (165, 65, 1988, [`dormir, comer`]);
+let persona = new person (165, 65, 1988, ['comer' , ' dormir ' , 'futbol']);
 
-let Imc = persona.calcularImc()
+let Imc = persona.calcularImc();
 
-let Edad = persona.calcularEdad()
+let currentYear = new Date ().getFullYear();
+let Edad = persona.calcularEdad(currentYear);
 
-//          console.log(Imc);
 
-//          console.log(Edad);
+        //  console.log(Imc);
+
+        //  console.log(Edad);
 
         //  persona.printAll();
 
-//          persona.printHobbies();
+        //  persona.printHobbies();
 
 
-// console.log(persona);
+
  
 
 module.exports = person;

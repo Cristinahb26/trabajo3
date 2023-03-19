@@ -1,10 +1,11 @@
-const Contacts = require("./Contacts");
-const person = require("./person");
+
+let person = require('./person');
+const Contacts = require('./contacts');
+
+let Contacto = new Contacts();
+
+let persona = new person(165, 65, 1988, ['dormir', 'comer' , 'futbol']);
 
 
-let Contac = new Contacts();
-
-//  let persona = new person();
-
- console.log(Contac);
- 
+Contacto.traerPersona(persona);
+Contacto.printPersons();

@@ -11,27 +11,25 @@ class Contacts {
     traerPersona(person){
     
         this.persona1.push(person);
-
     }
+
     printPersons(){
-
-        console.log(` la altura es ${person.altura} - el peso ${person.peso} - el año de nacimiento es ${person.yearOfBirth} -  hobbies es ${person.hobbies} `);
-    
+     for(let i = 0; i < this.persona1.length; i++){
+        console.log(`altura ${this.persona1[i].altura} - mi peso ${this.persona1[i].peso} - año de nacimiento ${this.persona1[i].yearOfBirth} - hobbies ${this.persona1[i].hobbies}`);
      }
-    }
+
+      }
+     }
+    
 
 
+// let Contacto = new Contacts();
 
+// let persona = new person (165, 65, 1988, [`dormir', 'comer`]);
 
-let Contact = new Contacts();
+// Contacto.traerPersona(persona);
 
-let persona = new person(167, 80, 1988, [' dormir, comer ']);
-
-Contact.traerPersona(persona);
-Contact.printPersons();
-
-
-
+// Contacto.printPersons();
 
 module.exports = Contacts;
 
