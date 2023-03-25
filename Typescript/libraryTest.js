@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var book_1 = require("./book");
+var library_1 = require("./library");
+var Book1 = new book_1.Book("Introduccion a Javascript", 233, "2344433-BC23333", "Joseph Smith", "Now Editions");
+var Librarys = new library_1.Library([Book1], "Av. padre piquer", "Luis Mendez");
+Librarys.setAddress("Av padre piquer");
+Librarys.getAddress();
+Librarys.setManager("Luis Mendez");
+Librarys.getManager();
+Librarys.findByAuthor("Ariana Godoy");
+Librarys.toString();
+console.log(Librarys.toString());
+console.log(Librarys);
+console.log(Librarys.getNumberOfBooks());
+console.log(Librarys.findByAuthor("Ariana Godoy"));
